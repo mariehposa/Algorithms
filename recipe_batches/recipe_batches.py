@@ -3,8 +3,15 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  batches = [0] * len(recipe)
+  i = 0
 
+  for (key, value) in recipe.items():
+    print(f"{key} : {value}")
+    for i in recipe.value:
+      batches[i] = ingredients.value[i] / recipe.value[i]
+      i = i + 1
+    
 
 if __name__ == '__main__':
   # Change the entries of these dictionaries to test 
